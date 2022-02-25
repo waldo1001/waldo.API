@@ -1,0 +1,23 @@
+@username = WALDO
+@password = Waldo1234
+
+@bclocal = http://bccurrent:7048/BC
+
+@baseurl = {{bclocal}}/api
+ 
+
+##################################################################################
+get {{baseurl}}/waldo/dynex/v1.0
+Authorization: Basic {{username}} {{password}}
+
+##################################################################################
+get {{baseurl}}/waldo/dynex/v1.0/customers
+Authorization: Basic {{username}} {{password}}
+
+##################################################################################
+get {{baseurl}}/waldo/dynex/v1.0/companies
+Authorization: Basic {{username}} {{password}}
+
+##################################################################################
+get {{baseurl}}/waldo/dynex/v1.0/companies(f20c247e-4496-ec11-ab13-ed69f93014a9)/customers
+Authorization: Basic {{username}} {{password}}
